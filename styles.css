@@ -290,6 +290,10 @@
     cursor: pointer;
 }
 
+footer p {
+    margin-bottom: 0;
+}
+
 .social-links span:hover {
     background: var(--highlight);
 }
