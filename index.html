@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fawn Travel Agency</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap link -->
+
+    <!-- Font Awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- Font Awesome cdn link -->
+
+    <!-- fonts import -->
+    <link rel="stylesheet" href="fonts.css" />
+    <!-- fonts import -->
+  </head>
+
+  <body>
+    <header>
+      <!--Header section start-->
+
+      <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-md">
+          <a class="navbar-brand" href="index.html" id="logo"
+            ><span>Fawn</span>Travel Agency</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mynavbar"
+          >
+            <span class="fa-solid fa-bars"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#hero">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#destinations">Destinations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tours">Tours</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--Header section end-->
+
+    <!-- Hero section start -->
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <h1>Explore the world</h1>
+        <p>Visit <span class="visit-destinations"></span></p>
+        <a href="#destinations">Explore destinations</a>
+      </div>
+    </section>
+
+    <!-- Hero section end -->
+
+    <!-- Destinations Section start -->
+
+    <section class="destinations" id="destinations">
+      <div class="container">
+        <div class="main-txt">
+          <h1><span>D</span>estinations</h1>
+        </div>
+        <div class="container">
+          <div class="row g-4">
+            <!-- France Card -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card h-100">
+                <img
+                  src="./images/france.jpg"
+                  class="card-img-top"
+                  alt="France landscape"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h2 class="card-title">France</h2>
+                  <div class="star">
+                    <span class="fa-solid fa-star checked"></span>
+                    <span class="fa-solid fa-star checked"></span>
+                    <span class="fa-solid fa-star checked"></span>
+                    <span class="fa-solid fa-star checked"></span>
+                    <span class="fa-solid fa-star"></span>
+                  </div>
+                  <p class="card-text">
+                    Explore art, history, and the enchanting French way of life.
+                  </p>
+                  <a href="#" class="btn btn-primary mt-auto">Learn more</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Germany Card -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card h-100">
+                <img
+                  src="./images/germany.jpg"
+                  class="card-img-top"
+                  alt="Germany landscape"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h2 class="card-title">Germany</h2>
+                  <div class="star">
+                    <span class="fa-solid fa-star checked"></span>
+                    <span class="fa-solid fa-star checked"></span>
+                    <span class="fa-solid fa-star checked"></span>
+                    <span class="fa-solid fa-star checked"></span>
+                    <span class="fa-solid fa-star checked"></span>
+                  </div>
+                  <p class="card-text">
+                    Explore a land of rich past and cutting-edge modern marvels.
+                    From bustling cities to scenic routes, adventure awaits.
+                  </p>
+                  <a href="#" class="btn btn-primary mt-auto">Learn more</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Brazil Card -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card h-100">
+                <img
+                  src="./images/brazil.jpg"
+                  class="card-img-top"
+                  alt="Brazil landscape"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h2 class="card-title">Brazil</h2>
+                  <div class="star">
+                    <span class="fa-solid fa-star checked"></span>
+                    <span class="fa-solid fa-star checked"></span>
+                    <span class="fa-solid fa-star checked"></span>
+                    <span class="fa-solid fa-star"></span>
+                    <span class="fa-solid fa-star"></span>
+                  </div>
+                  <p class="card-text">
+                    Experience the rhythm of Carnival, stunning beaches, and
+                    Amazonian wonders
+                  </p>
+                  <a href="#" class="btn btn-primary mt-auto">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destinations Section end -->
+
+    <!-- Tours Section start -->
+
+    <!-- Tours Section start -->
+    <section class="tours" id="tours">
+      <div class="container">
+        <div class="main-txt">
+          <h1><span>T</span>ours</h1>
+        </div>
+
+        <div class="accordion accordion-flush" id="tourAccordion">
+          <!-- Paris Tour -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#parisTour"
+                aria-expanded="false"
+                aria-controls="parisTour"
+              >
+                <i class="fa-solid fa-archway me-2"></i>
+                Paris Cultural Experience
+              </button>
+            </h2>
+            <div
+              id="parisTour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#tourAccordion"
+            >
+              <div class="accordion-body">
+                <p>
+                  7-day immersive tour featuring Louvre visits, Seine River
+                  cruises, and authentic French cuisine experiences.
+                </p>
+                <a href="#" class="tour-link"
+                  >View Details <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- German Castles Tour -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#germanyTour"
+                aria-expanded="false"
+                aria-controls="germanyTour"
+              >
+                <i class="fa-solid fa-castle me-2"></i>
+                German Castles Adventure
+              </button>
+            </h2>
+            <div
+              id="germanyTour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#tourAccordion"
+            >
+              <div class="accordion-body">
+                <p>
+                  10-day journey through Bavaria's iconic castles including
+                  Neuschwanstein, with optional hiking excursions.
+                </p>
+                <a href="#" class="tour-link"
+                  >View Details <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Amazon Expedition -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#amazonTour"
+                aria-expanded="false"
+                aria-controls="amazonTour"
+              >
+                <i class="fa-solid fa-tree me-2"></i>
+                Amazon Rainforest Expedition
+              </button>
+            </h2>
+            <div
+              id="amazonTour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#tourAccordion"
+            >
+              <div class="accordion-body">
+                <p>
+                  14-day guided eco-tour with riverboat stays, wildlife
+                  spotting, and indigenous community visits.
+                </p>
+                <a href="#" class="tour-link"
+                  >View Details <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Tours Section end -->
+
+    <!-- Tours Section end -->
+
+    <!-- Contact Section start -->
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="main-text">
+          <h1><span>C</span>ontact</h1>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/contact.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="col-md-6 py-3 py-md-0">
+            <form action="#">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="John Doe"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="name@example.com"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="destination" class="form-label"
+                  >Destination of interest</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="destination"
+                  placeholder="Dubai"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="3"
+                  placeholder="Leave a message for us"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section end -->
+
+    <!-- Footer section start -->
+
+    <footer id="footer">
+      <h1><span>Fawn</span> Travels</h1>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <div class="social-links">
+        <span class="fa-brands fa-twitter"></span>
+        <span class="fa-brands fa-facebook"></span>
+        <span class="fa-brands fa-instagram"></span>
+        <span class="fa-brands fa-youtube"></span>
+        <span class="fa-brands fa-pinterest-p"></span>
+      </div>
+      <div class="copyright">
+        <p>&copy;Copyright Fawn Travel agency. All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <!-- Footer section end -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: "Lato", sans-serif;
+    /* border: 1px solid rgb(255, 255, 255); */
+}
+
+:root {
+    --primary-color: #9FB3DF;
+    --secondary-color: #9EC6F3;
+    --tertiary-color: #bddde4;
+    --highlight: #F7374F;
+}
+
+
+/*Header styling start*/
+
+#navbar {
+    background: var(--primary-color);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 0.2px solid var(--highlight);
+}
+
+#logo {
+    font-size: 20px;
+    font-weight: 500;
+    text-shadow: 0 1px 2px black;
+}
+
+#logo span {
+    color: var(--highlight);
+}
+
+.navbar-toggler span {
+    color: var(--highlight);
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+#mynavbar {
+    margin-left: 20px;
+}
+
+.nav-item .nav-link {
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 3px;
+}
+
+@media (min-width: 992px) {
+        .nav-item .nav-link:hover {
+        color: black;
+        border-bottom: 2px solid var(--highlight);
+        padding-bottom: 3px;
+    }
+}
+
+/*Header styling end*/
+
+
+/* Hero section start */
+
+.hero-content {
+    background-image: linear-gradient(
+        rgba(75, 122, 122, 0.2),
+        rgba(17, 30, 31, 0.8)
+      ), url(./images/hero.jpg);
+    width: 100%;
+    height: max-content;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 150px 0;
+}    
+
+.hero-content h1 {
+    font-size: 40px;
+    font-weight: 500;
+    text-shadow: 2px 2px 3px black;
+}
+
+.hero-content p {
+    font-size: 70px;
+    font-weight: 700;
+    text-shadow: 2px 2px 3px black;
+    margin: 30px;
+}
+
+.hero-content .visit-destinations::after {
+    content: ' ';
+    color: var(--highlight);
+    text-shadow: 2 3px 3px black;
+    animation: changetext 30s infinite linear;
+}
+
+@keyframes changetext {
+    0%{content: "France";}
+    10%{content: "Egypt";}
+    20%{content: "USA";}
+    30%{content: "Australia";}
+    40%{content: "Nigeria";}
+    50%{content: "China";}
+    60%{content: "Japan";}
+    70%{content: "Pakistan";}
+    80%{content: "Turkey";}
+    90%{content: "Brazil";}
+    100%{content: "Russia";}
+}
+
+.hero-content a {
+    color: black;
+    background: white;
+    letter-spacing: 2px;
+    font-weight: 600px;
+    border-radius: 5px;
+    transition: 0.5s;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.hero-content a:hover {
+    background-color: var(--highlight);
+    color: white;
+    transform: scale(2); 
+}
+/* Hero section end */
+
+/* Destinations section start */
+.destinations {
+    background-color: var(--tertiary-color);
+    padding: 20px;
+}
+.destinations h1 {
+    text-align: center;
+    margin: 30px;
+    font-weight: 600px;
+    text-shadow: 0px 1px 1px black;
+}
+
+.destinations h1 span {
+    color: var(--highlight);
+}
+
+.destinations .card {
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.destinations .card img {
+    border-radius: 20px;
+}
+
+.card-body h2 {
+    font-weight: 600;
+    color: black;
+    text-shadow: 0px 0px 2px black;
+}
+
+.checked {
+    color: gold;
+}
+
+.card .btn {
+    background-color: var(--highlight);
+    box-shadow: 0px 2px 5px black;
+    border: none;
+}
+/* Destinations section end */
+
+/* Tours section start */
+
+.tours {
+    background-color: var(--tertiary-color);
+    padding: 50px 0;
+  }
+  
+  .accordion-button {
+    background-color: var(--primary-color);
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .accordion-button:not(.collapsed) {
+    background-color: var(--highlight);
+    color: white;
+  }
+  
+  .accordion-button:focus {
+    box-shadow: none;
+  }
+  
+  .tour-link {
+    color: var(--highlight);
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 15px;
+  }
+  
+  .tour-link:hover {
+    color: #d12e43;
+    transform: translateX(5px);
+    transition: all 0.3s ease;
+  }
+  
+  .accordion-body {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+/* Tours section end */
+
+/* Contact section start */
+
+.contact {
+    background-color: var(--tertiary-color);
+    padding: 50px;
+}
+
+.main-text h1 {
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+
+.main-text h1 span {
+    color: var(--highlight);
+}
+
+.contact .card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 5px 5px -5px black;
+}
+
+.contact .row {
+    margin-top: 30px;
+}
+
+.contact form input, .contact form textarea {
+    box-shadow: 0px 5px 5px -5px black;
+    border-radius: 10px;
+}
+
+.contact form button {
+    background-color: var(--highlight);
+    box-shadow: 0px 2px 5px black;
+    border: none;
+}
+
+/* Contact section end */
+
+/* Footer section start */
+
+#footer {
+    width: 100%;
+    text-align: center;
+    background: var(--primary-color);
+}
+
+#footer h1 {
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0 0 1px black;
+}
+
+#footer h1 span {
+    color: var(--highlight);
+}
+
+.social-links span {
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.social-links span:hover {
+    background: var(--highlight);
+}
+/* Footer section end */
